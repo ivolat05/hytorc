@@ -1624,3 +1624,237 @@ input[type="number"]::-webkit-inner-spin-button {
 .footer-form-btn:hover {
     background: #4D4D4D;
 }
+
+.bread-padding {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.bread-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.bread-list-inner + .bread-list-inner {
+    position: relative;
+    padding-left: 17px;
+}
+
+.bread-list-inner + .bread-list-inner::before {
+    content: '-';
+    padding-left: 5px;
+    padding-right: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(77, 77, 77, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.bread-list-inner {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(77, 77, 77, 0.5);
+}
+
+.bread-list-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4D4D4D;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    display: block;
+}
+
+.bread-list-link:hover {
+    color: #D70E1A;
+}
+
+.services-padding {
+    padding-bottom: 130px;
+}
+
+.services-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 30px;
+}
+
+.services-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4D4D4D;
+    padding-bottom: 40px;
+}
+
+.services-text span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.services-wrapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 89px;
+}
+
+.services-box {
+    width: 49%;
+    min-height: 281px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px 45px 40px 35px;
+    background: #FFFFFF;
+    border: 1px solid #DADDDF;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    margin-bottom: 20px;
+}
+
+.services-box:hover {
+    background: #D70E1A;
+    border: 1px solid #DADDDF;
+}
+
+.services-box:hover .services-box-title,
+    .services-box:hover .services-box-text,
+    .services-box:hover .services-box-link {
+    color: #fff;
+}
+
+.services-box-title {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 125%;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.services-box-text {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #4D4D4D;
+    padding-bottom: 20px;
+}
+
+.services-box-link {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #D70E1A;
+}
+
+.services-img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.services-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.services-row-text {
+    width: 49%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4D4D4D;
+}
+
+.etap-padding {
+    padding-bottom: 111px;
+}
+
+.etap-operat-padding {
+    padding-bottom: 147px;
+}
+
+.etap-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 47px;
+}
+
+.etap-wrapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.etap-wrapp-operat .etap-box {
+    width: 32%;
+}
+
+.etap-box {
+    width: 24%;
+    padding: 40px 35px;
+    min-height: 190px;
+    background: #FFFFFF;
+    border: 1px solid #DADDDF;
+    margin-bottom: 20px;
+}
+
+.etap-box-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.etap-box-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4D4D4D;
+}
