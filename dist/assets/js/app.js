@@ -50,7 +50,11 @@ $(function () {
 
 
 		};
-		$(`#form`).validate(validate);
+		let form = document.querySelectorAll('form');
+		for (let i = 0; i < form.length; i++) {
+			$(`#form-${i}`).validate(validate);
+		}
+
 
 	}
 	validationForm();
