@@ -1858,3 +1858,30 @@ input[type="number"]::-webkit-inner-spin-button {
     line-height: 140%;
     color: #4D4D4D;
 }
+
+.rent-padding {
+    padding-bottom: 110px;
+}
+
+.rent-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 33px;
+}
+
+.rent-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4D4D4D;
+    padding-bottom: 20px;
+}
+
+.rent-img {
+    margin-top: 15px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
