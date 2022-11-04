@@ -470,6 +470,13 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #FFFFFF;
     background: #D70E1A;
     padding: 14px 24px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.header-wrapp-btn:hover {
+    background: #4D4D4D;
 }
 
 .main {
@@ -560,8 +567,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .main-btn:hover {
-    border: 1px solid #FFFFFF;
-    background: none;
+    background: #4D4D4D;
+    border: 1px solid #4D4D4D;
 }
 
 .main-link {
@@ -711,6 +718,13 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #D70E1A;
     margin-top: auto;
     margin-bottom: 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.company-link:hover {
+    color: #4D4D4D;
 }
 
 .company-row {
@@ -1060,6 +1074,13 @@ input[type="number"]::-webkit-inner-spin-button {
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.forms-btn:hover {
+    background: #4D4D4D;
 }
 
 .solutions-padding {
@@ -1594,4 +1615,12 @@ input[type="number"]::-webkit-inner-spin-button {
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.footer-form-btn:hover {
+    background: #4D4D4D;
 }
