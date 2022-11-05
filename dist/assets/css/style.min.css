@@ -797,6 +797,10 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-wrap: wrap;
 }
 
+.catalog-wrapp-sucategory .catalog-box {
+    width: 32%;
+}
+
 .catalog-box.catalog-box-start {
     display: -webkit-box;
     display: -ms-flexbox;
