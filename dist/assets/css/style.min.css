@@ -2443,3 +2443,48 @@ input[type="number"]::-webkit-inner-spin-button {
 .contacts-row {
     padding-bottom: 65px;
 }
+
+.privacy-padding {
+    padding-bottom: 119px;
+}
+
+.privacy-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 30px;
+}
+
+.privacy-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4D4D4D;
+    padding-bottom: 40px;
+}
+
+.privacy-text.--padding {
+    padding-bottom: 17px;
+}
+
+.privacy-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.privacy-list-inner {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4D4D4D;
+    padding-left: 4px;
+}
+
+.privacy-list {
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
