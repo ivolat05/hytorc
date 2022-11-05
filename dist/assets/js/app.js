@@ -58,4 +58,37 @@ $(function () {
 
 	}
 	validationForm();
+
+	// фильтр
+	function filter() {
+		const btn = document.querySelectorAll('.catalog-subcategory-btn');
+		const box = document.querySelectorAll('.catalog-box');
+		btn.forEach(item => {
+			item.addEventListener('click', () => {
+				let dataArr = item.getAttribute('data-type');
+				btn.forEach(e => {
+					e.classList.remove('--active');
+				})
+				item.classList.add('--active');
+				box.forEach(e => {
+					e.classList.remove('--hidden')
+				})
+				if (dataArr === 'end-bolting') {
+					box.forEach(e => {
+						if (!e.classList.contains('end-bolting')) {
+							e.classList.add('--hidden')
+						}
+					})
+				}
+				else if (dataArr === 'cassette') {
+					box.forEach(e => {
+						if (!e.classList.contains('cassette')) {
+							e.classList.add('--hidden')
+						}
+					})
+				}
+			})
+		})
+	}
+	filter();
 })
