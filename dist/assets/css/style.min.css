@@ -3501,3 +3501,251 @@ input[type="number"]::-webkit-inner-spin-button {
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+.know {
+    max-width: 1141px;
+}
+
+.know-padding {
+    padding-bottom: 120px;
+}
+
+.know-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.know-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #4D4D4D;
+    padding-bottom: 45px;
+}
+
+.know-label {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.know-label-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -333;
+    opacity: 0;
+}
+
+.know-label-span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 204px;
+    height: 47px;
+    background: #D70E1A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.know-label-span:hover {
+    background: #4D4D4D;
+}
+
+.know-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 88px;
+}
+
+.know-box-img {
+    width: 49%;
+    height: 400px;
+}
+
+.know-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.know-subtitle {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 125%;
+    color: #000000;
+    padding-bottom: 36px;
+}
+
+.know-box-link {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.know-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    padding: 40px 35px;
+    min-height: 199px;
+    background: #FFFFFF;
+    border: 1px solid #DADDDF;
+}
+
+.know-link:hover {
+    border: 1px solid #D70E1A;
+    background: #D70E1A;
+}
+
+.know-link:hover .know-link-head,
+    .know-link:hover .know-link-body {
+    color: #fff;
+}
+
+.know-link-head {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.know-link-body {
+    display: block;
+    margin-bottom: 0;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #D70E1A;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.panel-coll {
+    width: 17.8vw;
+    background: #F3F4F5;
+    padding-top: 40px;
+}
+
+.panel-black {
+    background: #4D4D4D;
+}
+
+.panel-black .panel-head,
+  .panel-black .panel-link {
+    color: #FFFFFF;
+}
+
+.panel-coll-two {
+    width: 21.5vw;
+    padding-top: 36px;
+}
+
+.panel-coll-two .panel-accordion {
+    margin-right: 106px;
+}
+
+.panel-coll-2 {
+    width: 79.3vw;
+}
+
+.panel-coll-2-two {
+    width: 74vw;
+}
+
+.panel-coll-2-two .know {
+    max-width: 1310px;
+}
+
+.panel-accordion {
+    max-width: 265px;
+    margin: 0 auto 40px;
+}
+
+.panel-head {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4D4D4D;
+    padding-left: 11px;
+    background: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.panel-body-wrapp {
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.panel-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4D4D4D;
+    padding-bottom: 15px;
+    display: block;
+}
+
+.panel-link:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+.panel-body {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+}
