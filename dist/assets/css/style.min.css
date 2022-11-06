@@ -3097,10 +3097,6 @@ input[type="number"]::-webkit-inner-spin-button {
     padding-bottom: 20px;
 }
 
-.equipment-padding {
-    padding-bottom: 100px;
-}
-
 .equipment-title {
     font-weight: 500;
     font-size: 36px;
@@ -3315,7 +3311,19 @@ input[type="number"]::-webkit-inner-spin-button {
     padding-bottom: 10px;
 }
 
-.equipment-box-dowland {
+.document-padding {
+    padding-bottom: 100px;
+}
+
+.document-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 125%;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.document-box-dowland {
     display: grid;
     padding-top: 9px;
     grid-template-columns: 49% 49%;
@@ -3324,12 +3332,12 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: space-between;
 }
 
-.equipment-label {
+.document-label {
     position: relative;
     cursor: pointer;
 }
 
-.equipment-label-input {
+.document-label-input {
     position: absolute;
     left: 0;
     top: 0;
@@ -3337,7 +3345,7 @@ input[type="number"]::-webkit-inner-spin-button {
     opacity: 0;
 }
 
-.equipment-label-span {
+.document-label-span {
     width: 100%;
     height: 144px;
     margin-bottom: 10px;
@@ -3362,7 +3370,7 @@ input[type="number"]::-webkit-inner-spin-button {
     transition: .4s;
 }
 
-.equipment-label-span:hover {
+.document-label-span:hover {
     background: #D70E1A;
     color: #fff;
     border: 1px solid #D70E1A;
