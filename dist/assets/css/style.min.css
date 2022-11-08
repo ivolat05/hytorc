@@ -4129,6 +4129,10 @@ input[type="number"]::-webkit-inner-spin-button {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    .forms-title {
+        font-size: 32px;
+    }
 }
 
 
@@ -4516,5 +4520,28 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .privacy-list {
         padding-left: 7px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .catalog-wrapp-sucategory {
+        grid-template-columns: 49% 49%;
+    }
+}
+
+@media (max-width: 762px) {
+    .catalog-container-btn {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .catalog-subcategory-btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .catalog-wrapp-sucategory {
+        grid-template-columns: 100%;
     }
 }
