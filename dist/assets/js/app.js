@@ -134,4 +134,33 @@ $(function () {
 		}
 	}
 	accordion('.panel-head');
+
+	// menu
+	function menu() {
+		const btn = document.querySelector('.btn-menu-open');
+		const btnClose = document.querySelector('.btn-menu-close');
+		const row = document.querySelector('.header-row');
+		const body = document.querySelector('body')
+		if (btn) {
+			btn.addEventListener('click', () => {
+				if (!row.classList.contains('--active')) {
+					row.classList.add('--active');
+					body.classList.add('--stopy');
+				}
+			})
+			btnClose.addEventListener('click', () => {
+				if (row.classList.contains('--active')) {
+					row.classList.remove('--active');
+					body.classList.remove('--stopy');
+				}
+			})
+			window.addEventListener("resize", function () {
+				if (window.innerWidth >= 992) {
+					body.classList.remove('--stopy');
+					row.classList.remove('--active');
+				}
+			});
+		}
+	}
+	menu();
 })
