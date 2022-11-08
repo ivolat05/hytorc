@@ -2326,6 +2326,8 @@ input[type="number"]::-webkit-inner-spin-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .bread-list-inner + .bread-list-inner {
@@ -4332,5 +4334,74 @@ input[type="number"]::-webkit-inner-spin-button {
     .etap-wrapp-operat .etap-box {
         width: 100%;
         min-height: 120px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .rent-padding {
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .advant-box {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    .advant-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .advant-title {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 762px) {
+    .advant-box {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .benefit-wrapp {
+        display: block;
+    }
+
+    .benefit-box-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .benefit-coll {
+        width: 100%;
+    }
+
+    .benefit-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .list-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 762px) {
+    .list-title {
+        padding-bottom: 40px;
+    }
+
+    .list-box {
+        width: 100%;
     }
 }
