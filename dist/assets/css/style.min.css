@@ -4496,3 +4496,25 @@ input[type="number"]::-webkit-inner-spin-button {
         padding-bottom: 0;
     }
 }
+
+
+@media (max-width: 992px) {
+    .privacy-padding {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .privacy-title {
+        font-size: 29px;
+    }
+
+    .privacy-text,
+  .privacy-list-inner {
+        font-size: 12px;
+    }
+
+    .privacy-list {
+        padding-left: 7px;
+    }
+}
