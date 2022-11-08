@@ -3084,6 +3084,8 @@ input[type="number"]::-webkit-inner-spin-button {
     -ms-flex-pack: start;
     justify-content: start;
     padding-top: 42px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .contacts-box.--two .contacts-link {
@@ -3097,7 +3099,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .contacts-row-line {
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgba(77, 77, 77, 0.2);
 }
 
 .contacts-row-line:nth-child(2) {
@@ -4471,5 +4473,26 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 100%;
         margin-top: 0;
         margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .contacts-box {
+        display: block;
+    }
+
+    .contacts-box .contacts-link {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .contacts-box.--two .contacts-link {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .contacts-padding {
+        padding-bottom: 0;
     }
 }
