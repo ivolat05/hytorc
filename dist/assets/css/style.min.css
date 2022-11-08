@@ -3725,6 +3725,10 @@ input[type="number"]::-webkit-inner-spin-button {
     transition: .4s;
 }
 
+.panel-mob {
+    display: none;
+}
+
 .panel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4543,5 +4547,240 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .catalog-wrapp-sucategory {
         grid-template-columns: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .galary-padding {
+        padding-bottom: 50px;
+    }
+
+    .equipment-table {
+        overflow: auto;
+    }
+
+    .equipment-table-row {
+        width: 1140px;
+    }
+
+    .galary-padding-2 {
+        padding-bottom: 50px;
+    }
+
+    .document-padding-2 {
+        padding-bottom: 50px;
+    }
+
+    .equipment-list {
+        margin-bottom: 50px;
+    }
+
+    .equipment-table {
+        padding-bottom: 50px;
+    }
+
+    .equipment-row {
+        padding-bottom: 50px;
+    }
+
+    .equipment-text {
+        padding-bottom: 50px;
+    }
+
+    .document-padding-3,
+  .document-padding-4 {
+        padding-bottom: 0;
+    }
+
+    .document-padding-3 .document-wrapp,
+    .document-padding-4 .document-wrapp {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .document-padding-3 .document-wrapp .document-box-dowland,
+      .document-padding-4 .document-wrapp .document-box-dowland {
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .document-padding-4 .document-title {
+        padding-bottom: 15px;
+    }
+
+    .galary-padding-4,
+  .document-padding-5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 762px) {
+    .equipment-row-2 {
+        grid-template-columns: 49% 49%;
+    }
+
+    .equipment-list {
+        display: block;
+    }
+
+    .document-box-dowland {
+        display: block;
+    }
+
+    .galary-wrapp {
+        display: block;
+    }
+
+    .equipment-row {
+        display: block;
+    }
+}
+
+@media (max-width: 572px) {
+    .equipment-row-2 {
+        display: block;
+    }
+
+    .equipment-box-img {
+        display: block;
+    }
+}
+
+
+@media (max-width: 1800px) {
+    .panel-coll {
+        width: 350px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin-right: 15px;
+    }
+
+    .panel-coll-2 {
+        width: 100%;
+    }
+
+    .know {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1550px) {
+    .know-row {
+        width: 100%;
+    }
+
+    .know-row .know-box-img {
+        width: 49%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1400px) {
+    .panel-coll {
+        width: 270px;
+    }
+
+    .panel-coll-two .panel-accordion {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .know-box-link {
+        grid-template-columns: 49% 49%;
+    }
+
+    .know-link {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .panel {
+        display: block;
+        max-width: 695px;
+        margin: 0 auto;
+    }
+
+    .panel-mob {
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .panel-desctop {
+        display: none;
+    }
+
+    .panel-coll {
+        margin-bottom: 20px;
+    }
+
+    .panel-accordion {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .panel-coll {
+        padding: 20px 15px 1px 15px;
+    }
+
+    .panel-coll,
+  .panel-coll-2,
+  .know {
+        width: 100%;
+    }
+
+    .panel-coll,
+  .panel-coll-2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .know-row {
+        padding-bottom: 50px;
+    }
+
+    .know-padding {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 762px) {
+    .panel {
+        max-width: 510px;
+    }
+
+    .know-box-link {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 572px) {
+    .panel {
+        max-width: 100%;
+    }
+
+    .know-box-img {
+        width: 100%;
+    }
+
+    .know-row {
+        display: block;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .know-row .know-box-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .know-link {
+        padding: 15px;
+        min-height: 130px;
     }
 }
