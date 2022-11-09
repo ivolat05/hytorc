@@ -787,14 +787,44 @@ input[type="number"]::-webkit-inner-spin-button {
 .header-menu-box {
     position: absolute;
     left: 0;
-    top: 100%;
+    top: -100%;
     overflow: hidden;
-    max-height: 0;
+    height: 0;
     width: 100%;
     background: #fff;
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
+    z-index: -1;
+    opacity: 0;
+}
+
+.header-fon {
+    background: #fff;
+}
+
+.header-list-inner {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.header-list-inner:hover {
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.header-list-inner:hover .header-menu-box {
+    height: auto;
+    top: 100%;
+    opacity: 1;
+}
+
+.header-list-inner:hover .header-list-img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .header-box-wrapp {
@@ -4043,6 +4073,13 @@ input[type="number"]::-webkit-inner-spin-button {
         position: static;
         padding-left: 20px;
         background: #000;
+        z-index: 0;
+        opacity: 1;
+    }
+
+    .header-list-link {
+        padding-top: 0;
+        padding-bottom: 15px;
     }
 
     .header-box-title {
