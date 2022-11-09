@@ -133,7 +133,7 @@ $(function () {
 			})
 		}
 	}
-	accordion('.panel-head');
+	accordion('.panel-head-open');
 
 	// menu
 	function menu() {
