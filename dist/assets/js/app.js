@@ -134,13 +134,50 @@ $(function () {
 		}
 	}
 	accordion('.panel-head-open');
+	function accordionAccordion(btnAccordion) {
+		const btn = document.querySelectorAll(`${btnAccordion}`);
+		let row = document.querySelector('.header-row')
+		if (btn) {
 
+			btn.forEach(item => {
+
+				item.addEventListener('mouseover', () => {
+					btn.forEach(e => {
+						e.classList.remove('--active')
+						let panels = e.nextElementSibling;
+						if (panels.style.maxHeight) {
+							panels.style.maxHeight = null;
+						}
+					})
+					item.classList.add("--active");
+					let panel = item.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				})
+
+
+			})
+			row.addEventListener('mouseover', function (event) {
+				event.stopPropagation();
+				console.log(row.classList)
+			})
+
+
+
+		}
+	}
+	accordionAccordion('.header-list-open');
 	// menu
 	function menu() {
 		const btn = document.querySelector('.btn-menu-open');
 		const btnClose = document.querySelector('.btn-menu-close');
 		const row = document.querySelector('.header-row');
-		const body = document.querySelector('body')
+		const body = document.querySelector('body');
+		const headerListOpen = document.querySelectorAll('.header-list-open');
+
 		if (btn) {
 			btn.addEventListener('click', () => {
 				if (!row.classList.contains('--active')) {
@@ -152,15 +189,48 @@ $(function () {
 				if (row.classList.contains('--active')) {
 					row.classList.remove('--active');
 					body.classList.remove('--stopy');
+					headerListOpen.forEach(e => {
+						e.classList.remove('--active');
+						let panels = e.nextElementSibling;
+						if (panels.style.maxHeight) {
+							panels.style.maxHeight = null;
+						}
+					})
 				}
 			})
 			window.addEventListener("resize", function () {
 				if (window.innerWidth >= 992) {
 					body.classList.remove('--stopy');
 					row.classList.remove('--active');
+					headerListOpen.forEach(e => {
+						e.classList.remove('--active');
+						let panels = e.nextElementSibling;
+						if (panels.style.maxHeight) {
+							panels.style.maxHeight = null;
+						}
+					})
 				}
 			});
 		}
 	}
 	menu();
+
+	// mab tab
+	function tab() {
+		const btn = document.querySelectorAll('.contacts-link-tab');
+		let tab = document.querySelectorAll('.map-box-tab');
+		if (btn) {
+			btn.forEach(item => {
+				item.addEventListener('click', () => {
+					let dataArr = item.getAttribute('data-tab');
+					let id = document.getElementById(dataArr);
+					tab.forEach(e => {
+						e.classList.remove('--active');
+					})
+					id.classList.add('--active')
+				})
+			})
+		}
+	}
+	tab()
 })
