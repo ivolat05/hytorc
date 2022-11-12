@@ -193,6 +193,10 @@ $(function () {
 					tab.forEach(e => {
 						e.classList.remove('--active');
 					})
+					btn.forEach(e => {
+						e.classList.remove('--active');
+					})
+					item.classList.add('--active')
 					id.classList.add('--active')
 				})
 			})
